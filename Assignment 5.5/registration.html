@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club - Registration</title>
+    <meta name="description" content="Register to become a member of the college Coding Club.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>College Coding Club</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="registration.html">Registration</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Club Registration Form</h2>
+
+      <form action="#" method="post">
+        <p>
+          <label for="fullname">Full Name:</label><br>
+          <input type="text" id="fullname" name="fullname" required>
+        </p>
+
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" required>
+        </p>
+
+        <p>
+          <label for="course">Course:</label><br>
+          <select id="course" name="course" required>
+            <option value="">Select your course</option>
+            <option value="bca">BCA</option>
+            <option value="bsc">B.Sc Computer Science</option>
+            <option value="btech">B.Tech</option>
+          </select>
+        </p>
+
+        <p>
+          Interest:<br>
+          <input type="radio" id="web" name="interest" value="web" required>
+          <label for="web">Web Development</label>
+          <input type="radio" id="app" name="interest" value="app">
+          <label for="app">App Development</label>
+          <input type="radio" id="dsa" name="interest" value="dsa">
+          <label for="dsa">Problem Solving</label>
+        </p>
+
+        <p>
+          <label for="reason">Why do you want to join?</label><br>
+          <textarea id="reason" name="reason" rows="4"></textarea>
+        </p>
+
+        <p>
+          <button type="submit" class="btn">Register</button>
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <p>Copyright 2026 College Coding Club</p>
+    </footer>
+  </body>
+</html>
